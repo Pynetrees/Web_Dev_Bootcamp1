@@ -1,0 +1,10 @@
+ /*  selector{
+        property: value;
+    } */
+
+    h1{
+      color:rgb(238, 6, 238);
+    }
+    li{
+      color:rgb(197, 129, 4);
+    }
