@@ -1,0 +1,9 @@
+#important{
+  background: yellow;
+}
+li{
+  border:2px solid red;
+}
+.completed{
+  text-decoration: line-through;
+}

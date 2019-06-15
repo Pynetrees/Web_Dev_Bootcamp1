@@ -1,10 +1,21 @@
- /*  selector{
+/*  selector{
         property: value;
     } */
 
-    h1{
-      color:rgb(238, 6, 238);
-    }
-    li{
-      color:rgb(197, 129, 4);
-    }
+h1 {
+  color: rgb(238, 6, 238);
+  /* border-color: purple;
+  border-width: 5px;
+  border-style: groove; */
+
+  border: 5px groove purple;
+}
+li {
+  color: rgb(197, 129, 4);
+}
+h4 {
+  background: rgb(255, 100, 80);
+}
+body {
+  background: url(https://cdn.pixabay.com/photo/2015/12/04/16/47/fractal-1076735_960_720.jpg);
+}
