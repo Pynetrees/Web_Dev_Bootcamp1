@@ -1,9 +1,25 @@
+/* id */
 #important{
   background: yellow;
 }
+/* Element */
 li{
   border:2px solid red;
 }
+/* class */
 .completed{
   text-decoration: line-through;
 }
+/* star * - applies to every element on the page*/
+
+/* Descendant (li a) - takes 2 or more selectors eg 
+    all anchor tags inside an li */
+
+/* Adjacent (h4 + ul) - selects all ul tags that 
+    come after an h4 on the page*/
+
+/* Attribute a[href="www.google.com"] - selects all 
+    anchor tags that have a matching href.*/
+
+/* nth of type ul:nth-of-type(3) - would select every 
+    third ul on the page */

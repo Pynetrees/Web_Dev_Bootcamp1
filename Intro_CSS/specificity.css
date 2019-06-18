@@ -1,0 +1,15 @@
+ul{
+  color:blue;
+}
+body{
+  color:red;
+}
+li{
+  color: orange;
+}
+.highlight{
+  color: yellow;
+}
+#special{
+  color: pink;
+}
