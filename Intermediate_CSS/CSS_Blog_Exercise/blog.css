@@ -1,0 +1,26 @@
+#blog{
+  border: #bdc3c7 solid 20px;
+  width: 50%;
+  margin: 0 auto;
+  font-family: 'Source Sans Pro', sans-serif;
+}
+.article{
+  margin:25px;
+}
+.date{
+  text-transform: uppercase;
+  color: #3498db;
+}
+.title{
+  text-transform: capitalize;
+}
+.firstParagraph{
+  border-left: #bdc3c7 solid 3px;
+  padding-left: 5px;
+}
+hr{
+  border: 0;
+  height: 0;
+  border-top: 1px solid rgba(0, 0, 0, 0.1);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.3);
+}
