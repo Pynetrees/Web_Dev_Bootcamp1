@@ -8,13 +8,24 @@
     />
     <link
       rel="stylesheet"
-      href="/Bootstrap_V3.3.7/BS_3.3.7_IMG_Gallery/bootstrap.css"
+      type="text/css"
+      href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.3.1/css/all.css"
+      integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU"
+      crossorigin="anonymous"
+    />
+    <link
+      rel="stylesheet"
+      href="\Bootstrap_V3.3.7\BS_3.3.7_IMG_Gallery\gallery.css"
     />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
     <title>Image Gallery</title>
   </head>
   <body>
-    <nav class="navbar navbar-inverse">
+    <nav class="navbar navbar-inverse navbar-fixed-top">
       <button
         type="button"
         class="navbar-toggle collapsed"
@@ -29,7 +40,13 @@
       </button>
       <div class="container">
         <div class="navbar-header">
-          <a href="#" class="navbar-brand">Gallery</a>
+          <a href="#" class="navbar-brand"
+            ><span
+              class="glyphicon glyphicon-picture"
+              aria-hidden="true"
+            ></span>
+            Gallery</a
+          >
         </div>
         <div
           class="collapse navbar-collapse"
@@ -40,63 +57,93 @@
             <li><a href="#">Contact</a></li>
           </ul>
           <ul class="nav navbar-nav navbar-right">
-            <a href="#">Sign Up</a>
-            <a href="#">Log In</a>
+            <li><a href="#">Sign Up</a></li>
+            <li><a href="#">Log In</a></li>
           </ul>
         </div>
       </div>
     </nav>
     <div class="container">
       <div class="jumbotron">
-        <h1><span class="glyphicon glyphicon-camera" aria-hidden="true"></span> The Image Gallery</h1>
+        <h1>
+          <i class="fas fa-camera-retro"></i>
+          The Image Gallery
+        </h1>
         <p>
           A bunch of beautiful images that I did not take.
         </p>
       </div>
       <div class="row">
-        <div class="col-lg-4 col-sm-6">
+        <div class="col-md-4 col-sm-6">
           <div class="thumbnail">
-            <img src="https://cdn.pixabay.com/photo/2016/09/04/20/09/mountains-1645078__340.jpg" alt="Beautiful Mountains">
+            <img
+              src="https://images.unsplash.com/photo-1464822759023-fed622ff2c3b?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=750&q=80"
+              alt="Beautiful Mountains"
+            />
           </div>
         </div>
-        <div class="col-lg-4 col-sm-6">
+        <div class="col-md-4 col-sm-6">
           <div class="thumbnail">
-            <img src="https://cdn.pixabay.com/photo/2016/09/04/20/09/mountains-1645078__340.jpg" alt="Beautiful Mountains">
+            <img
+              src="https://images.unsplash.com/photo-1483728642387-6c3bdd6c93e5?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=755&q=80"
+              alt="Beautiful Mountains"
+            />
           </div>
         </div>
-        <div class="col-lg-4 col-sm-6">
+        <div class="col-md-4 col-sm-6">
           <div class="thumbnail">
-            <img src="https://cdn.pixabay.com/photo/2016/09/04/20/09/mountains-1645078__340.jpg" alt="Beautiful Mountains">
+            <img
+              src="https://images.unsplash.com/photo-1526080676457-4544bf0ebba9?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=750&q=80"
+              alt="Beautiful Mountains"
+            />
           </div>
         </div>
-        <div class="col-lg-4 col-sm-6">
-            <div class="thumbnail">
-              <img src="https://cdn.pixabay.com/photo/2016/09/04/20/09/mountains-1645078__340.jpg" alt="Beautiful Mountains">
-            </div>
-          </div>
-          <div class="col-lg-4 col-sm-6">
-            <div class="thumbnail">
-              <img src="https://cdn.pixabay.com/photo/2016/09/04/20/09/mountains-1645078__340.jpg" alt="Beautiful Mountains">
-            </div>
-          </div>
-          <div class="col-lg-4 col-sm-6">
-            <div class="thumbnail">
-              <img src="https://cdn.pixabay.com/photo/2016/09/04/20/09/mountains-1645078__340.jpg" alt="Beautiful Mountains">
+        <div class="col-md-4 col-sm-6">
+          <div class="thumbnail">
+            <img
+              src="https://images.unsplash.com/photo-1516655855035-d5215bcb5604?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=750&q=80"
+              alt="Beautiful Mountains"
+            />
           </div>
         </div>
-        <div class="col-lg-4 col-sm-6">
-            <div class="thumbnail">
-              <img src="https://cdn.pixabay.com/photo/2016/09/04/20/09/mountains-1645078__340.jpg" alt="Beautiful Mountains">
-            </div>
+        <div class="col-md-4 col-sm-6">
+          <div class="thumbnail">
+            <img
+              src="https://images.unsplash.com/photo-1519681393784-d120267933ba?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=750&q=80"
+              alt="Beautiful Mountains"
+            />
           </div>
-          <div class="col-lg-4 col-sm-6">
-            <div class="thumbnail">
-              <img src="https://cdn.pixabay.com/photo/2016/09/04/20/09/mountains-1645078__340.jpg" alt="Beautiful Mountains">
-            </div>
+        </div>
+        <div class="col-md-4 col-sm-6">
+          <div class="thumbnail">
+            <img
+              src="https://images.unsplash.com/photo-1477346611705-65d1883cee1e?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=750&q=80"
+              alt="Beautiful Mountains"
+            />
           </div>
-          <div class="col-lg-4 col-sm-6">
-            <div class="thumbnail">
-              <img src="https://cdn.pixabay.com/photo/2016/09/04/20/09/mountains-1645078__340.jpg" alt="Beautiful Mountains">
+        </div>
+        <div class="col-md-4 col-sm-6">
+          <div class="thumbnail">
+            <img
+              src="https://images.unsplash.com/photo-1434394566634-da0fa7e334b8?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=750&q=80"
+              alt="Beautiful Mountains"
+            />
+          </div>
+        </div>
+        <div class="col-md-4 col-sm-6">
+          <div class="thumbnail">
+            <img
+              src="https://images.unsplash.com/photo-1519405530001-3b5e82ba4dac?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=625&q=80"
+              alt="Beautiful Mountains"
+            />
+          </div>
+        </div>
+        <div class="col-md-4 col-sm-6">
+          <div class="thumbnail">
+            <img
+              src="https://images.unsplash.com/photo-1464061884326-64f6ebd57f83?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=750&q=80"
+              alt="Beautiful Mountains"
+            />
           </div>
         </div>
       </div>
