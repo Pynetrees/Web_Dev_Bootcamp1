@@ -5,17 +5,22 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
     <script src="assets\js\lib\jquery-3.4.1.min.js" type="text/javascript"></script>
+    <script src="https://kit.fontawesome.com/27470898e4.js"></script>
+    <link
+      href="https://fonts.googleapis.com/css?family=Roboto:400,500,700&display=swap"
+      rel="stylesheet"
+    />
     <link rel="stylesheet" href="assets\css\todos.css" />
     <title>Todo List</title>
   </head>
   <body>
     <div id="container">
-      <h1>To-do List</h1>
-      <input type="text" />
+      <h1>To-do List <span id="toggle-form"><i class="fas fa-thumbtack"></i></span></h1>
+      <input placeholder="Add New To-do" type="text" />
       <ul>
-        <li><span>X</span> Go to Potions class</li>
-        <li><span>X</span> Buy new robes</li>
-        <li><span>X</span> Visit Hagrid</li>
+        <li><span><i class="fas fa-trash-alt"></i></span> Go to Potions class</li>
+        <li><span><i class="fas fa-trash-alt"></i></span> Buy new robes</li>
+        <li><span><i class="fas fa-trash-alt"></i></span> Visit Hagrid</li>
       </ul>
     </div>
     <script type="text/javascript" src="assets\js\todos.js"></script>
