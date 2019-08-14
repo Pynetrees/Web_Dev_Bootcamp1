@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <script src="paper-full.js" type="text/javascript"></script>
+    <script src="howler.min.js" type="text/javascript"></script>
+    <link rel="stylesheet" href="circles.css" type="text/css" />
+
+    <script type="text/paperscript" canvas="myCanvas">
+      var circles = [];
+      var sound1 = new Howl({
+        src: ['sounds/bubbles.mp3']
+      });
+      var sound2 = new Howl({
+        src: ['sounds/clay.mp3']
+      });
+
+      function onKeyDown(event) {
+        var maxPoint = new Point(view.size.width, view.size.height);
+        var randomPoint = Point.random();
+        var point = maxPoint * randomPoint;
+        var newCircle = new Path.Circle(point, 500);
+        
+        circles.push(newCircle);
+      };
+
+      function onFrame(event) {
+        for(var i = 0; i < circles.length; i++){
+          circles[i].fillColor.hue += 1;
+          circles[i].scale(.9);
+        }
+      }
+    </script>
+    <title>Patatap Clone</title>
+  </head>
+  <body>
+    <canvas id="myCanvas" resize></canvas>
+  </body>
+</html>
