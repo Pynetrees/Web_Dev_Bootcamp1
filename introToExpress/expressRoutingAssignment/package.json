@@ -1,0 +1,22 @@
+{
+  "name": "expressroutingassignment",
+  "version": "1.0.0",
+  "description": "Practicing express routing ",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Pynetrees/Web_Dev_Bootcamp1.git"
+  },
+  "author": "John Pyne",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Pynetrees/Web_Dev_Bootcamp1/issues"
+  },
+  "homepage": "https://github.com/Pynetrees/Web_Dev_Bootcamp1#readme",
+  "dependencies": {
+    "express.js": "^1.0.0"
+  }
+}
