@@ -1,0 +1,32 @@
+{
+  "name": "yelpcamp",
+  "version": "1.0.0",
+  "description": "Yelp Clone Project",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Pynetrees/Web_Dev_Bootcamp1.git"
+  },
+  "keywords": [
+    "Yelp",
+    "Clone",
+    "Social",
+    "Media",
+    "Full",
+    "Stack",
+    "MongoDB"
+  ],
+  "author": "John L. Pyne IV",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Pynetrees/Web_Dev_Bootcamp1/issues"
+  },
+  "homepage": "https://github.com/Pynetrees/Web_Dev_Bootcamp1#readme",
+  "dependencies": {
+    "ejs": "^2.7.1",
+    "express": "^4.17.1"
+  }
+}
