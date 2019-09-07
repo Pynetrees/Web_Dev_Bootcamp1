@@ -35,25 +35,42 @@ app.get("/", function (req, res) {
   res.render("landing");
 });
 
+//INDEX - show all campgrounds
 app.get("/campgrounds", function (req, res) {
   //GET ALL CAMPGROUNDS FROM DB
   Campground.find({}, function (err, allCampgrounds) {
     if (err) {
       console.log(err);
     } else {
-      res.render("campgrounds", { campgrounds: allCampgrounds });
+      res.render("index", { campgrounds: allCampgrounds });
     }
   })
 });
 
+//CREATE - add new campground to DB
 app.get("/campgrounds/new", function (req, res) {
   res.render("new");
+});
+
+//SHOW - Shows more info about one campground
+app.get("/campgrounds/:id", function (req, res) {
+  //find campground with provided ID
+  Campground.findById(req.params.id, function (err, foundCampground) {
+    if (err) {
+      console.log(err)
+    } else {
+      //render show template with that campground
+  res.render("show", {campground: foundCampground});
+    }
+  });
+  
 });
 
 app.post("/campgrounds", function (req, res) {
   var name = req.body.name;
   var image = req.body.image;
-  var newCampground = { name: name, image: image };
+  var desc = req.body.description;
+  var newCampground = { name: name, image: image, description: desc };
   //CREATE NEW CAMPGROUND & SAVE 2 DATABASE
   Campground.create(newCampground, function (err, newlyCreated) {
     if (err) {
@@ -63,6 +80,8 @@ app.post("/campgrounds", function (req, res) {
     }
   })
 });
+
+
 
 app.listen(port, function () {
   console.log("YelpCamp Server Has Started!");
