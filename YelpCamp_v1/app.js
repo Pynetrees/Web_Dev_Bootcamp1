@@ -2,34 +2,16 @@ var express = require("express"),
   bodyParser = require("body-parser"),
   mongoose = require("mongoose"),
   app = express(),
-  port = process.env.PORT || 3000
+  Campground = require("./models/campground"),
+  Comment = require("./models/comment"),
+  seedDB = require("./seeds")
+port = process.env.PORT || 3000;
 
+// seedDB();
 mongoose.connect("mongodb://localhost:27017/yelp_camp", { useNewUrlParser: true });
 app.use(express.static("public"));
 app.use(bodyParser.urlencoded({ extended: true }));
 app.set("view engine", "ejs");
-
-// SCHEMA SETUP
-var campgroundSchema = new mongoose.Schema({
-  name: String,
-  image: String,
-  description: String
-});
-
-var Campground = mongoose.model("Campground", campgroundSchema);
-
-// Campground.create({ 
-//   name: "Acadia", 
-//   image: "/images/acadia-national-park-80357_1920.jpg",
-//   description: "Huge island off coast of Maine great camping & tons of wildlife" }, function(err, campground)
-//   {
-//   if(err){
-//     console.log(err);
-//   } else {
-//     console.log("NEWLY CREATED CAMPGROUND");
-//     console.log(campground);
-//   }
-// });
 
 app.get("/", function (req, res) {
   res.render("landing");
@@ -55,15 +37,14 @@ app.get("/campgrounds/new", function (req, res) {
 //SHOW - Shows more info about one campground
 app.get("/campgrounds/:id", function (req, res) {
   //find campground with provided ID
-  Campground.findById(req.params.id, function (err, foundCampground) {
+  Campground.findById(req.params.id).populate("comments").exec(function (err, foundCampground) {
     if (err) {
       console.log(err)
     } else {
       //render show template with that campground
-  res.render("show", {campground: foundCampground});
+      res.render("show", { campground: foundCampground });
     }
   });
-  
 });
 
 app.post("/campgrounds", function (req, res) {
